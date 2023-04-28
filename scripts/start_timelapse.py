@@ -6,7 +6,8 @@ import time
 #parameters
 delay=10
 
-cd ~/timelapse_temp
+os.chdir('~/timelapse_temp')
+
 
 def start_taking_snapshots(output_directory,delay):
     if os.path.exists(output_directory):
