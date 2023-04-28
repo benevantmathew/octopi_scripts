@@ -2,6 +2,9 @@ import requests
 import os
 import datetime
 import time
+##############
+#parameters
+delay=10
 
 
 def start_taking_snapshots(output_directory,delay):
@@ -28,9 +31,5 @@ def start_taking_snapshots(output_directory,delay):
         time.sleep(delay)
 
 
-def main():
-    start_taking_snapshots(datetime.datetime.utcnow().strftime("%Y%m%d_%H%M%S"),delay)
-
-
 if __name__ == "__main__":
-    main()
+    start_taking_snapshots(datetime.datetime.utcnow().strftime("%Y%m%d_%H%M%S"),delay)
