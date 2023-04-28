@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd ~/timelapse
 # Create a directory with current timestamp
 timestamp=$(date +%Y-%m-%d_%H-%M-%S)
 mkdir -p "~/timelapse/$timestamp"
