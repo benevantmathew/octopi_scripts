@@ -6,7 +6,7 @@ import time
 #parameters
 delay=10
 
-os.chdir('~/timelapse_temp')
+os.chdir('/home/pi/timelapse_temp')
 
 
 def start_taking_snapshots(output_directory,delay):
